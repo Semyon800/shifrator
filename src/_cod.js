@@ -1,24 +1,23 @@
-
+import { littera, numCode } from './_sypher';
 
 let result = "";
-let rash;
-let text;
+let cod;
+let text = "";
 
-btn.addEventListener('click', () => {
+export function coder (inpCoder) {
     text = "";
     text = inpCoder.value;
-    rash = text.split("");
+    cod = text.split("");
 
-    for (let i = 0; i < rash.length; i++) {
-        for (let j = 0; j < lett.length; j++) {
-            if (rash[i] == lett[j]) {
-                result += num[j] + " ";
+    for (let i = 0; i < text.length; i++) {
+        for (let j = 0; j < littera.length; j++) {
+            if (text[i] == littera[j]) {
+                result += numCode[j] + " ";
                 break;
             }
         }
     }
-
     inpCoder.value = result;
-})
+}
 
 console.log(result);
