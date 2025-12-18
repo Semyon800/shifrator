@@ -8,4 +8,4 @@ let btn = document.getElementById('btncoder');
 let inpCoder = document.getElementById('coder');
 
 btn.addEventListener('click', () => coder(inpCoder));
-btn2.addEventListener('click', () => decoder(inpCoder));
+btn2.addEventListener('click', () => decoder(inpDecoder));

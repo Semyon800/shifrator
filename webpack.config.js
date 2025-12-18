@@ -26,9 +26,9 @@ module.exports = {
     },
 
     // Настройка порта
-    devServer: {
-        port: 9000,
-    },
+    // devServer: {
+    //     port: 9001,
+    // },
 
     // https://github.com/webpack-contrib/terser-webpack-plugin
     optimization: {

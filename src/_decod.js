@@ -4,14 +4,13 @@ let result = "";
 let cod;
 let text = "";
 
-export function decoder(inpDecoder) {
-    text = "";
+export function decoder (inpDecoder) {
     text = inpDecoder.value;
     cod = text.split(" ");
 
-    for (let i = 0; i < text.length; i++) {
+    for (let i = 0; i < cod.length; i++) {
         for (let j = 0; j < numCode.length; j++) {
-            if (text[i] == numCode[j]) {
+            if (cod[i] == numCode[j]) {
                 result += littera[j];
                 break;
             }
